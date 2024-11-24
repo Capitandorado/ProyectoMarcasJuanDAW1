@@ -1,0 +1,286 @@
+/* General */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f2; /* Fondo suave */
+    color: #333; /* Texto principal */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ff8c42, #ff5a36); /* Degradado cálido */
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar nav ul a.btn-highlight {
+    background-color: #ffffff;
+    color: #ff5a36;
+    font-weight: bold;
+}
+
+.navbar nav ul a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ffad66, #ff7740); /* Suave pero cálido */
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a1a1a; /* Negro puro para mayor contraste */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Countries Section */
+.countries {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.countries h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a; /* Negro puro para mayor contraste */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Más espacio entre tarjetas */
+    padding: 0 2rem;
+}
+
+.card {
+    background: #ffffff; /* Fondo limpio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    color: #1a1a1a; /* Negro puro */
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 1rem 1rem;
+    line-height: 1.5;
+}
+
+.card .btn {
+    display: inline-block;
+    background: #ff8c42; /* Botón cálido */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.card .btn:hover {
+    background: #ff5a36;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff8c42;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Formulario */
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+form button {
+    background: #ff8c42;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff5a36;
+}
+
+/* Listas */
+ul, ol {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 600px;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #f9f6f2;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}

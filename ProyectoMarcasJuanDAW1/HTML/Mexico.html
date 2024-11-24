@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Comida Mexicana, Gastronomía de México, Tacos, Mole, Enchiladas">
+    <meta name="description" content="Descubre la vibrante gastronomía de México con tacos, mole, enchiladas y más.">
+    <meta name="author" content="Juan Alejandro Hernández Sánchez">
+    <title>Sabores de México</title>
+    <link href="../CSS/Style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Sabores de México</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../HTML/Index.html">Inicio</a></li>
+                    <li><a href="#Final">Sobre Nosotros</a></li>
+                    <li><a href="../HTML/Contacto.html">Contacto</a></li>
+                    <li><a href="../HTML/Index.html" class="btn-highlight">Explorar Países</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Descubre los Sabores de México</h1>
+        <p>Un viaje culinario lleno de colores, sabores vibrantes y tradiciones.</p>
+    </div>
+
+    <section class="countries">
+        <h2>Gastronomía Mexicana</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="../IMG/Mexicana.jpg" alt="Tacos">
+                <h3>Tacos</h3>
+                <p>Un clásico mexicano: tortillas rellenas con carnes, vegetales y salsas.</p>
+            </div>
+            <div class="card">
+                <img src="../IMG/Mole.jpg" alt="Mole">
+                <h3>Mole</h3>
+                <p>Una mezcla rica de chiles, chocolate y especias para deleitar el paladar.</p>
+            </div>
+            <div class="card">
+                <img src="../IMG/Enchiladas.png" alt="Enchiladas">
+                <h3>Enchiladas</h3>
+                <p>Tortillas rellenas y bañadas en una deliciosa salsa mexicana.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Datos Curiosos de la Gastronomía Mexicana</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <caption>Principales ingredientes y su uso en la cocina mexicana</caption>
+            <thead>
+                <tr>
+                    <th>Ingrediente</th>
+                    <th>Plato Típico</th>
+                    <th colspan="2">Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maíz</td>
+                    <td>Tacos</td>
+                    <td colspan="2">Base de muchas recetas tradicionales.</td>
+                </tr>
+                <tr>
+                    <td>Chile</td>
+                    <td>Salsas</td>
+                    <td>Variedad:</td>
+                    <td>Jalapeño, Serrano, Pasilla, etc.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Chocolate</td>
+                    <td colspan="2">Ingrediente esencial del mole.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Platillos Más Populares</h2>
+        <ol start="3">
+            <li>Tacos al pastor</li>
+            <li>Chiles en nogada</li>
+            <li>Quesadillas</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Bebidas Típicas Mexicanas</h2>
+        <ul>
+            <li>Tequila</li>
+            <li>Margarita</li>
+            <li>Aguas frescas (Jamaica, Tamarindo, Horchata)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cuéntanos tu opinión sobre la comida mexicana</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <br>
+   
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <br>
+    
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Tu edad" required>
+            <br>
+    
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            <br>
+    
+            <label for="usuario">Usuario (5 letras minúsculas y 5 números):</label>
+            <input type="text" id="usuario" name="usuario" pattern="[a-z]{5}[0-9]{5}" placeholder="abcde12345" required>
+            <br>
+    
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+            <br>
+    
+            <label for="preferencias">¿Qué te gustaría probar?</label>
+            <select id="preferencias" name="preferencias" required>
+                <option value="Tacos">Tacos</option>
+                <option value="Mole">Mole</option>
+                <option value="Enchiladas">Enchiladas</option>
+                <option value="Postres">Postres Mexicanos</option>
+            </select>
+            <br>
+    
+            <label>¿Qué plato mexicano prefieres?</label><br>
+            <input type="radio" id="tacos" name="plato" value="Tacos" required>
+            <label for="tacos">Tacos</label>
+            <input type="radio" id="mole" name="plato" value="Mole">
+            <label for="mole">Mole</label>
+            <br>
+    
+            <label>Elige tus acompañamientos:</label><br>
+            <input type="checkbox" id="guacamole" name="acompaniamientos" value="Guacamole" checked>
+            <label for="guacamole">Guacamole</label>
+            <input type="checkbox" id="salsa" name="acompaniamientos" value="Salsa">
+            <label for="salsa">Salsa</label>
+            <input type="checkbox" id="frijoles" name="acompaniamientos" value="Frijoles">
+            <label for="frijoles">Frijoles</label>
+            <br><br>
+    
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </section>
+    
+    <div id="Final">
+        <footer>
+            <p>© 2024 Sabores de México. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

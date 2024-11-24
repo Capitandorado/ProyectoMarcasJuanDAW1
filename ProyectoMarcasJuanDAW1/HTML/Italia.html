@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Comida Italiana, Gastronomía Italiana, Pasta, Pizza, Risotto">
+    <meta name="description" content="Explora los auténticos sabores de Italia con su deliciosa gastronomía.">
+    <meta name="author" content="Juan Alejandro Hernández Sánchez">
+    <title>Italia - Sabores del Mundo</title>
+    <link href="../CSS/Style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Sabores del Mundo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="#descripcion">Sobre Italia</a></li>
+                    <li><a href="#platillos">Platillos Destacados</a></li>
+                    <li><a href="#contacto" class="btn-highlight">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="descripcion" class="hero">
+        <h1>Italia</h1>
+        <p>
+            Descubre la riqueza de la cocina italiana, famosa por su pasta, pizza y sabores únicos que han conquistado el mundo.
+            Cada platillo es una expresión de arte culinario y tradición.
+        </p>
+    </section>
+
+    <section id="platillos" class="countries">
+        <h2>Datos Curiosos y Platillos Clásicos</h2>
+        <table>
+            <caption>Información sobre la Gastronomía Italiana</caption>
+            <thead>
+                <tr>
+                    <th>Dato</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pasta</td>
+                    <td>Más de 350 tipos de pasta se originaron en Italia.</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>La pizza Margarita fue creada en honor a la Reina Margarita de Saboya.</td>
+                </tr>
+                <tr>
+                    <td>Risotto</td>
+                    <td>El risotto alla milanese es un plato típico de la región de Lombardía.</td>
+                </tr>
+                <tr>
+                    <td>Postres</td>
+                    <td>El tiramisú es uno de los postres italianos más conocidos a nivel mundial.</td>
+                </tr>
+                <tr>
+                    <td>Vinos</td>
+                    <td>Italia es uno de los mayores productores de vino del mundo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contacto" class="countries">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Sabores del Mundo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
